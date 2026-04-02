@@ -23,25 +23,25 @@
 - **I** - Interface segregation principle (nguyên lý phân tích Interface)
 - **D** - Dependency Inversion principle (nguyên lý đảo ngược phục thuộc)
 - SOLID bao gồm các nguyên lý quan trọng bậc nhất cần tuân thủ khi thiết kế kiến trúc phần mềm nhằm đạt được mục đích:
-- Dễ mở rộng
-- Dễ bảo trì
-#### Single-responsibilty principle
+  - Dễ mở rộng
+  - Dễ bảo trì
+### Single-responsibilty principle
 - Nguyên lý trách nhiệm duy nhất
 - Mỗi lớp chỉ nên đảm nhiệm một nhiệm vụ duy nhất
 - Lý do:
-- Dễ quản lý mã nguồn
-- Các lớp tập trung vào nhiệm vụ của mình
-- Giảm tính phụ thuộc giữa các thành phần
-- Có thể phát triển đồng thời các lớp độc lập với nhau
-- Dễ dàng mở rộng
-- Dễ dàng bảo trì
+  - Dễ quản lý mã nguồn
+  - Các lớp tập trung vào nhiệm vụ của mình
+  - Giảm tính phụ thuộc giữa các thành phần
+  - Có thể phát triển đồng thời các lớp độc lập với nhau
+  - Dễ dàng mở rộng
+  - Dễ dàng bảo trì
 ### Open-closed principle
 - Nguyên lý đóng mở
 - Các đối tượng (hoặc thực thể) nên mở đối với việc mở rộng, nhưng đóng đối với việc thay đổi
 - Nghĩa là: có thể dễ dàng mở rộng một lớp mà không cần thay đổi mã nguồn của lớp đó
 - Lí do:
-- Dễ mở rộng
-- Dễ thay đổi
+  - Dễ mở rộng
+  - Dễ thay đổi
 ### Liskov substitution principle
 - Các lớp con có thể được sử dụng thay thế cho các lớp cha
 - Nghĩa là: Nếu S là một lớp con của T, thì các đối tượng của lớp T có thể được thay thế bằng các đối tượng của
