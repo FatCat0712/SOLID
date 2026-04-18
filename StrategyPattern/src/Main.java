@@ -3,19 +3,23 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) {
 
-        for(int i = 0; i < 10; i++) {
-            Ticket ticket = new Ticket();
-            ticket.setPrice(50 * (i + 1));
-            ticket.setName("Ticket " + i);
-            assignStrategy(ticket);
-            logTicketDetails(ticket);
+//        for(int i = 0; i < 10; i++) {
+//            Ticket ticket = new Ticket();
+//            ticket.setPrice(50 * (i + 1));
+//            ticket.setName("Ticket " + i);
+//            assignStrategy(ticket);
+//            logTicketDetails(ticket);
+//
+//            assignStrategy(ticket);
+//            logTicketDetails(ticket);
+//
+//            System.out.println("------------------------------");
+//
+//        }
 
-            assignStrategy(ticket);
-            logTicketDetails(ticket);
-
-            System.out.println("------------------------------");
-
-        }
+        String a = null;
+        a = a + "Hello";
+        System.out.println(a);
     }
 
     private static void logTicketDetails(Ticket ticket) {
