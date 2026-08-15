@@ -9,16 +9,20 @@ public class Singleton {
     }
 
     public static Singleton getInstance() {
-        if (uniqueInstance == null) {
-            synchronized (Singleton.class) {
-                if (uniqueInstance == null) {
-                    Random random = new Random();
-                    int index = random.nextInt(1, 10);
-                    uniqueInstance = new Singleton(index);
-                }
-            }
+        Singleton instance = uniqueInstance;
+        if(instance != null) {
+            return instance;
         }
-        return uniqueInstance;
+        synchronized (Singleton.class) {
+            if (uniqueInstance == null) {
+                Random random = new Random();
+                int index = random.nextInt(1, 10);
+                uniqueInstance = new Singleton(index);
+            }
+            return uniqueInstance;
+        }
+
+
     }
 
     public void sayHi() {
